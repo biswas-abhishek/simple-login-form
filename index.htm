@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ----------------- [Meta Data] ----------------- -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------------- [Title Of Web Page] ----------------- -->
+    <title>Static Login template</title>
+    <!-- ----------------- [Main Style Sheet] ----------------- -->
+    <link rel="stylesheet" href="/static_login/css/style.css" />
+    <!-- ----------------- [Reset Default Style Sheet] ----------------- -->
+    <link rel="stylesheet" href="/static_login/css/normalize.css" />
+    <!-- ----------------- [Font Awesome Style Sheet CDN] ----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- ----------------- [Google Fonts CDN] ----------------- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Orelega+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 
+            **Aria-* Attibutes is
+            ** used for the disabled.
+            **For More Info => https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+    -->
+    <!-- ----------------- [Main Container] ----------------- -->
+    <div class="container">
+      <!-- ----------------- [Form Heading] ----------------- -->
+      <div class="heading">
+        <h1 aria-label="Form Heading">Simple Log In</h1>
+      </div>
+      <!-- ----------------- [Form Container] ----------------- -->
+      <form action="" method="post">
+        <!-- ----------------- [User Name] ----------------- -->
+        <div class="username">
+          <label for="name">
+            <i class="far fa-user" aria-hidden="true"></i>
+            User Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Name"
+            aria-placeholder="Enter Your Name"
+          />
+        </div>
+        <!-- ----------------- [Password] ----------------- -->
+        <div class="password">
+          <label for="name">
+            <i class="fas fa-key" aria-hidden="true"></i>
+
+            Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+            aria-placeholder="Enter Your Password"
+          />
+        </div>
+        <!-- ----------------- [Submit Button] ----------------- -->
+        <div class="submit">
+          <button type="submit" aria-label="Sign In" value="Sign In">
+            Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
